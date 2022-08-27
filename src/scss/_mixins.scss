@@ -1,0 +1,37 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+@mixin font-editor{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #635C73;
+}
+ 
+@mixin font-desc{
+    font-weight: 400;
+    color: #323232;
+}
+
+@mixin features-title {
+    font-weight: 700;
+    color: #8D81AC;
+}
+
+@mixin list-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #323232;
+}
+
+@mixin features-desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #848E97;
+}
+

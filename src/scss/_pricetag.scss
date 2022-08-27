@@ -1,0 +1,112 @@
+
+.price {
+    margin-top: -15px;
+    padding-top: 2%;
+    color: #fff;
+    background-image: url(../img/pricetag_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.price__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+
+    @media (min-width:481px) {
+        font-size: 42px;
+        line-height: 44px;
+    }
+
+    @media (min-width:993px) {
+        font-size: 48px;
+        line-height: 50px;
+    }
+}
+
+.price__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 153px;
+    padding-top: 112px;
+
+    @media (min-width:481px) {
+        display: grid;
+        grid-template-columns: repeat(2, 257px);
+    }
+
+    @media (min-width:993px) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.price__item {
+    background-color: rgba(251, 251, 251, 0.11);
+    width: 257px;
+    height: 457px;
+    font-weight: 400;
+
+    &--title {
+        padding: 36px 40px;
+        margin: 0;
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: uppercase;
+        background-color: rgba(251, 251, 251, 0.06);
+    }
+
+    &--pricetag {
+        font-size: 60px;
+        line-height: 62px;
+        font-weight: 700;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    &--per-month {
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        margin-bottom: 38px;
+    }
+
+    &--desc {
+        margin-top: 30px;
+        margin-bottom: 37px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    &--button {
+        cursor: pointer;
+        border-radius: 40px;
+        border-color: transparent;
+        background-color: rgba(251, 251, 251, 0.11);
+        color: #fff;
+        font-size: 15px;
+        line-height: 15px;
+        text-transform: uppercase;
+        padding: 15px 38px;
+        margin-bottom: 40px;
+    }
+
+    &--agency {
+        background: #463048;
+        zoom: 1;
+        width: 299px;
+        margin-left: -40px;
+
+        @media (min-width:993px) {
+            margin: 0;
+        }
+    }
+
+    &--button__agency {
+        margin-top: 83px;
+    }
+}

@@ -1,0 +1,46 @@
+.banner {
+
+    @include flex-center;
+    flex-direction: column;
+    // padding-bottom: 2%;
+
+}
+h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 82px;
+  line-height: 82px;
+  margin: 116px 0 19px;
+  color: #ffffff;
+}
+.banner__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #8d81ac;
+  margin: 0;
+  text-align: center;
+}
+.banner__small-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #848e97;
+  margin: 19px 0 428px;
+}
+.banner__smaller-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  color: #848e97;
+  position: relative;
+  bottom: -68px;
+  margin: 0;
+}

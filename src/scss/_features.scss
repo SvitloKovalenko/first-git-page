@@ -1,0 +1,94 @@
+.features {
+    padding-top: 2%;
+    padding-bottom: 33px;
+
+    @media (min-width:993px) {
+        background: #F4F4F4;
+    }
+}
+
+.features>div {
+    @media (min-width:993px) {
+        text-align: left;
+        display: grid;
+        column-gap: 20px;
+        grid-template-areas: "features title"
+            "feature screen"
+            "feature screen"
+            "feature screen";
+        grid-template-columns: auto 700px
+    }
+}
+
+.features__title {
+
+    @include features-title;
+    font-size: 32px;
+    line-height: 38px;
+
+    @media (min-width:481px) {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    @media (min-width:993px) {
+        font-size: 36px;
+        line-height: 50px;
+        grid-area: title;
+        margin: 0;
+    }
+}
+
+.features__list {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width:993px) {
+        grid-area: feature;
+    }
+}
+
+.features__grid {
+    @media (min-width:481px) {
+        display: grid;
+        grid-template-columns: 111px 563px;
+        gap: 20px;
+    }
+}
+
+.features__item {
+    @media (min-width:993px) {
+        display: flex;
+        grid-area: feature;
+    }
+
+    margin-top: 2%;
+}
+
+.features__subtitle {
+    @include list-title;
+}
+
+.features__desc {
+    @include features-desc;
+}
+
+.screen {
+    @media (max-width:480px) {
+        width: 300px;
+    }
+
+    @media (min-width:481px) {
+        padding: 0;
+        margin: 0;
+        width: 700px;
+        margin-left: 68px;
+    }
+
+    @media (min-width:993px) {
+        grid-area: screen;
+        padding-top: 20px;
+    }
+}
