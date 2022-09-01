@@ -1038,6 +1038,7 @@ h1 {
   color: #333;
   margin-right: 3%;
   margin-top: 3%;
+  cursor: pointer;
 }
 .editor__btn--span {
   border-radius: 5px;
